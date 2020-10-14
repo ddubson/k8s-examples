@@ -1,0 +1,11 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "K8s Cheatsheet"
+theme = "kraiklyn"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+[params]
+sidebarColor = "default"
+customCss = ["css/custom.css"]
+
