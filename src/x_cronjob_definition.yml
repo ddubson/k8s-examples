@@ -1,0 +1,17 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: reporting-cron-job
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+       completions: 3 # Specifies that this Job must have 3 successful completions
+        # The jobs will be performed sequentially, 3 times
+       template:
+         spec:
+           containers:
+           - name: math-add
+             image: ubuntu
+             command: [ 'expr', '2', '+','2' ]
+           restartPolicy: Never

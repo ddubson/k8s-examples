@@ -55,3 +55,27 @@ Delete a specific job by name
 kubectl delete job <job-name>
 ```
 
+## CronJobs
+
+Create a CronJob from a CronJob definition file
+
+✨ **Effect**: CronJob object created with appropriate Pods and a Schedule as to when it should execute
+
+```bash
+kubectl create -f <cronjob-definition-yml>
+```
+
+Get CronJobs in the default namespace
+
+```bash
+kubectl get cronjob
+```
+
+Delete a specific cronjob by name 
+
+✨ **Effect**: Deletes CronJob object; Deletes Pods that were created by the cronjob
+
+```bash
+kubectl delete cronjob <cron-job-name>
+```
+
