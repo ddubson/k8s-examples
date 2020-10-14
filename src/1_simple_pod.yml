@@ -1,0 +1,11 @@
+apiVersion: v1          # Version of K8s API to create objects
+kind: Pod               # The type of resource we are creating it
+metadata:
+  name: myapp-pod     # name of the POD
+  labels: # Any k-v pairs
+    app: myapp      # application being deployed in the POD
+    type: front-end
+spec: # Additional information for each "kind", this case is 'Pod' spec
+  containers:
+    - name: nginx-container
+      image: nginx
