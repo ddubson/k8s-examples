@@ -6,14 +6,14 @@ weight: 1
 anchor: "pods"
 ---
 
-⚡️ **Action**: Create a Pod in the default namespace.
+⚡️ **Action**: Create a Pod in the default namespace. (`k8s v1.19`)
 
 ```shell script
 # Imperative way: via arguments
-kubectl create run <pod-name> --image=<docker-image> --labels='<key=value>'
+kubectl run nginx --image=<docker-image> --labels='<key=value>' --generator=run-pod/v1
 
 # Imperative way: via arguments, simulating creation (dry run), and output a manifest
-kubectl run <pod-name> --image <docker-image> --dry-run -o yaml
+kubectl run <pod-name> --image=<docker-image> --dry-run -o yaml
 
 # Declarative way: via definition file
 kubectl create -f <definition-file-yml>
@@ -39,6 +39,9 @@ kubectl get pods --namespace=<my-namespace>
 ```shell script
 # Get short info on a Pod
 kubectl get pod <pod-name>
+
+# Get pod information and write it to a pod definition file
+kubectl get pod <pod-name> -o yaml > pod-definition.yaml
 
 # Get detailed info on a Pod
 kubectl describe pod <pod-name>

@@ -258,6 +258,15 @@ section code {
     line-height: 1.6;
 }
 
+code {
+    background-color: #444444 !important;
+    border-radius: 5px;
+    line-height: 1.2;
+    padding: 3px;
+    font-family: 'Monaco', 'Open Sans', 'sans-serif';
+    font-size: 13px;
+}
+
 section img {
     max-width: 100%;
 }
