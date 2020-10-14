@@ -6,9 +6,16 @@ weight: 1
 anchor: "pods"
 ---
 
-⚡️ **Action**: Create a Pod in the default namespace via definition file.
+⚡️ **Action**: Create a Pod in the default namespace.
 
-```bash
+```shell script
+# Imperative way: via arguments
+kubectl create run <pod-name> --image=<docker-image> --labels='<key=value>'
+
+# Imperative way: via arguments, simulating creation (dry run), and output a manifest
+kubectl run <pod-name> --image <docker-image> --dry-run -o yaml
+
+# Declarative way: via definition file
 kubectl create -f <definition-file-yml>
 ```
 
@@ -16,7 +23,7 @@ kubectl create -f <definition-file-yml>
 
 ⚡️ **Action**: Get all Pods
 
-```bash
+```shell script
 # List all pods in the default namespace
 kubectl get pods
 
@@ -27,8 +34,26 @@ kubectl get pods -o wide
 kubectl get pods --namespace=<my-namespace>
 ```
 
+⚡️ **Action**: Get information on a specific pod
+
+```shell script
+# Get short info on a Pod
+kubectl get pod <pod-name>
+
+# Get detailed info on a Pod
+kubectl describe pod <pod-name>
+```
+
 ⚡️ **Action**: Get logs of a Pod
 
-```bash
+```shell script
 kubectl logs <pod-name>
+```
+
+⚡️ **Action**: Delete a Pod
+
+✨ **Effect**: Completely removes a specific Pod from the cluster
+
+```shell script
+kubectl delete pod <pod-name>
 ```
