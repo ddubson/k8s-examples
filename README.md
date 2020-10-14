@@ -1,6 +1,6 @@
 # k8s-examples
 
-[k8s command cheatsheet](https://ddubson.github.io/k8s-examples/)
+[k8s command cheatsheet](https://hopeful-nightingale-b34dd8.netlify.app/)
 
 ## Sample definitions
 
