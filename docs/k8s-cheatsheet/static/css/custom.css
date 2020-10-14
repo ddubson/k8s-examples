@@ -60,7 +60,7 @@ p {
     text-align: center;
     padding: 1rem 1rem;
     color: #f0e7d5;
-    background-color: #363636;
+    background-color: #444444;
     display: flex;
     flex-direction: column;
 }
@@ -272,4 +272,8 @@ table, th, td {
 
 td {
     padding: 5px;
+}
+
+strong {
+    font-weight: bolder;
 }
