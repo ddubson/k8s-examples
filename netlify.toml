@@ -1,0 +1,30 @@
+[build]
+publish = "docs/k8s-cheatsheet/public"
+command = "pushd docs/k8s-cheatsheet && git submodule update --recursive --remote && hugo --gc --minify --ignoreCache"
+
+[context.production.environment]
+HUGO_VERSION = "0.76.4"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "pushd docs/k8s-cheatsheet && hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.76.4"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "pushd docs/k8s-cheatsheet && git submodule update --recursive --remote && hugo --gc -b $DEPLOY_PRIME_URL --minify --ignoreCache"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.76.4"
+
+[context.branch-deploy]
+command = "pushd docs/k8s-cheatsheet && hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.76.4"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
