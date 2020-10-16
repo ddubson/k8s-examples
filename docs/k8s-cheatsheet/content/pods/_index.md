@@ -10,10 +10,12 @@ anchor: "pods"
 
 ```shell script
 # Imperative way: via arguments
-kubectl run nginx --image=<docker-image> --labels='<key=value>' --generator=run-pod/v1
+kubectl run <pod-name> --image=<docker-image> --labels='<key=value>' --generator=run-pod/v1
 
 # Imperative way: via arguments, simulating creation (dry run), and output a manifest
 kubectl run <pod-name> --image=<docker-image> --dry-run -o yaml
+# ...but also write the definition to a file to modify later.
+kubectl run <pod-name> --image=<docker-image> --dry-run -o yaml > pod-definition.yml
 
 # Declarative way: via definition file
 kubectl create -f <definition-file-yml>
