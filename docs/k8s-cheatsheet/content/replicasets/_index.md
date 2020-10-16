@@ -27,6 +27,9 @@ kubectl get replicasets -o wide
 
 # Get a specific ReplicaSet by name
 kubectl get replicaset <replica-set-name>
+
+# Get ReplicaSet and flush its definition to a ReplicaSet definition file
+kubectl get replicaset <replica-set-name> -o yaml > replica-set-definition.yaml
 ```
 
 ⚡️ **Action**: Update/Scale ReplicaSet
