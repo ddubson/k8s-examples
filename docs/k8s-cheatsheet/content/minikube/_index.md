@@ -19,3 +19,11 @@ minikube stop
 ```
 
 https://kubernetes.io/docs/tasks/tools/install-minikube/
+
+### Accessing a service
+
+To find the Service URL in your cluster, run:
+
+```shell script
+minikube service --url <service-name>
+```
