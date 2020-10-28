@@ -3,7 +3,7 @@ title: "Deployments"
 date: 2020-10-16T18:46:11-04:00
 draft: false
 anchor: "deployments"
-weight: 4
+weight: 3
 ---
 
 ⚡️ **Action**: Create a Deployment
