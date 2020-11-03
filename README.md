@@ -14,3 +14,5 @@
 1. [Parallel Multiple-Pod Job definition](./src/x_job_definition_multiple_pods_parallel.yml)
 1. [Simple CronJob definition](./src/x_cronjob_definition.yml)
 1  [Network Policy - Ingress definition](./src/x_network_policy.yml)
+1. [Simple Persistent Volume definition](./src/volumes/simple_persistent_volume_definition.yml)
+1. [Simple Persistent Volume Claim definition](./src/volumes/simple_persistent_volume_claim_definition.yml)

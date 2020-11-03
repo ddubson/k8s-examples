@@ -49,6 +49,14 @@ kubectl get pod <pod-name> -o yaml > pod-definition.yaml
 kubectl describe pod <pod-name>
 ```
 
+⚡️ **Action**: Execute a command within a Pod
+
+✨ **Effect**: the provided command executed once on the container within the Pod
+
+```shell script
+kubectl exec <pod-name> -- <command> <param1> ... <paramN>
+```
+
 ⚡️ **Action**: Get logs of a Pod
 
 ```shell script
