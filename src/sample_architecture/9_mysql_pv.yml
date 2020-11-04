@@ -9,4 +9,15 @@ spec:
     - ReadWriteMany
   nfs:
     server: nfs01
-    path: "/mysql"
+    path: /mysql
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-persistent-storage
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteMany

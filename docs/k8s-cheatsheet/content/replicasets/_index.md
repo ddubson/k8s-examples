@@ -11,7 +11,7 @@ weight: 2
 ✨ **Effect**: ReplicaSet created with defined number of Pods (based on `replicas` field)
  
 ```shell script
-# Declaritive way: via definition file
+# Declarative way: via definition file
 kubectl create -f <replicaset-definition-yml>
 ```
 

@@ -9,4 +9,15 @@ spec:
     - ReadWriteMany
   nfs:
     server: nfs01
-    path: "/html"
+    path: /html
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: wordpress-persistent-storage
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteMany

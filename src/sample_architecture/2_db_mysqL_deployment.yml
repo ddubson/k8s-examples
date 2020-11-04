@@ -31,3 +31,14 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-persistent-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress-mysql
+spec:
+  type: ClusterIP
+  ports:
+    - port: 3306
+  selector:
+    type: mysql-db

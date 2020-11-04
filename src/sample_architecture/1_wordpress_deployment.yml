@@ -31,3 +31,16 @@ spec:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
           claimName: wordpress-persistent-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 31004
+  selector:
+    type: webapp
