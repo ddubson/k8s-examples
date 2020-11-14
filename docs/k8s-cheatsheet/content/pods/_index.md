@@ -21,7 +21,7 @@ kubectl run <pod-name> --image=<docker-image> --dry-run -o yaml > pod-definition
 kubectl create -f <definition-file-yml>
 ```
 
-[Sample Pod definition](https://github.com/ddubson/k8s-examples/blob/main/src/1_simple_pod.yml)
+[Sample Pod definition](https://github.com/ddubson/k8s-examples/blob/main/src/pods/simple_pod.yml)
 
 ⚡️ **Action**: Get all Pods
 

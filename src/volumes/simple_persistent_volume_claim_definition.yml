@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: claim1
 spec:
-  accessModes:
+  accessModes: # List of all access modes: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes
     - ReadWriteOnce
   resources:
     requests:
