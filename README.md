@@ -6,34 +6,38 @@
 
 ### Pods
 
-1. [Simple POD definition](src/pods/simple_pod.yml)
-1. [Pod with attached Persistent Volume Claim](src/pods/pod_with_pvc.yml)
+1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml)
+1. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
 
 ### ReplicaSets
 
-1. [Simple ReplicaSet definition](./src/2_simple_replica_set.yml)
+1. [Simple ReplicaSet definition](src/k8s-objects/replica-sets/simple-replica-set.yml)
 
 ### Deployments
 
-1. [Simple Deployment definition](./src/3_simple_deployment.yml)
+1. [Simple Deployment definition](src/k8s-objects/deployments/simple-deployment.yml)
 
 ### Services
 
-1. [Simple Service definition - NodePort](./src/4_simple_service_nodeport.yml)
-1. [Simple Service definition - ClusterIP](./src/5_simple_service_clusterip.yml)
+1. [Simple Service definition - NodePort](./src/k8s-objects/services/simple-service-nodeport.yml)
+1. [Simple Service definition - ClusterIP](./src/k8s-objects/services/simple-service-clusterip.yml)
 
-### Jobs / CronJobs
+### Jobs
 
-1. [Simple Job definition](./src/x_job_definition.yml)
-1. [Multiple-Pod Job definition](./src/x_job_definition_multiple_pods.yml)
-1. [Parallel Multiple-Pod Job definition](./src/x_job_definition_multiple_pods_parallel.yml)
-1. [Simple CronJob definition](./src/x_cronjob_definition.yml)
+1. [Simple Job definition](./src/k8s-objects/jobs/job-definition.yml)
+1. [Multiple-Pod Job definition](./src/k8s-objects/jobs/job-definition-multipod.yml)
+1. [Parallel Multiple-Pod Job definition](./src/k8s-objects/jobs/job-definition-multipod-parallel.yml)
+   
+### CronJobs
+
+1. [Simple CronJob definition](./src/k8s-objects/cronjobs/cronjob-definition.yml)
 
 ### Network Policies
 
-1  [Network Policy - Ingress definition](./src/x_network_policy.yml)
+1  [Network Policy - Ingress definition](src/k8s-networking/simple-network-policy.yml)
 
 ### Persistent Volumes & Claims
 
-1. [Simple Persistent Volume definition](./src/volumes/simple_persistent_volume_definition.yml)
-1. [Simple Persistent Volume Claim definition](./src/volumes/simple_persistent_volume_claim_definition.yml)
+1. [Simple Persistent Volume definition](./src/k8s-objects/volumes/simple-persistent-volume-definition.yml)
+1. [Simple Persistent Volume Claim definition](./src/k8s-objects/volumes/simple-persistent-volume-claim-definition.yml)
+
