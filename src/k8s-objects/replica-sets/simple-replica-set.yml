@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: ReplicaSet
-metadata:
+metadata:                     # Metadata for the ReplicaSet
   name: myapp-replicaset
   labels:
     app: myapp
     type: front-end
 spec:
-  template:
-    metadata:
-      name: myapp-pod
-      labels:
-        app: myapp
-        type: front-end
-    spec:
-      containers:
-        - name: nginx-container
-          image: nginx
-  replicas: 4
-  selector:
+  replicas: 4                 # Number of pods to create
+  template:                   # Template of a nested Pod definition
+    metadata:                 #! (Pod)
+      name: myapp-pod         #! (Pod)
+      labels:                 #! (Pod)
+        app: myapp            #! (Pod)
+        type: front-end       #! (Pod)
+    spec:                     #! (Pod)
+      containers:             #! (Pod)
+        - name: nginx-container #! (Pod)
+          image: nginx          #! (Pod)
+  selector:                   # ReplicaSets can match on Pods that were created outside this file as well hence need for selector
     matchLabels:
       type: front-end

@@ -6,12 +6,12 @@
 
 ### Pods
 
-1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml)
+1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml) - [README](./src/k8s-objects/pods/simple-pod.md)
 1. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
 
 ### ReplicaSets
 
-1. [Simple ReplicaSet definition](src/k8s-objects/replica-sets/simple-replica-set.yml)
+1. [Simple ReplicaSet definition](src/k8s-objects/replica-sets/simple-replica-set.yml) - [README](./src/k8s-objects/replica-sets/simple-replica-set.md)
 
 ### Deployments
 
