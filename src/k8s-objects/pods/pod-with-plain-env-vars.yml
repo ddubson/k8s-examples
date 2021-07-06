@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-with-vars
+  labels:
+    app: myapp-with-vars
+    type: front-end
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      env:
+        - name: MY_ENV_VAR
+          value: some-value
+        - name: ANOTHER_VAR
+          value: some-other-value

@@ -8,6 +8,7 @@
 
 1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml) - [README](./src/k8s-objects/pods/simple-pod.md)
 1. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
+1. [Pod with plain key-value env vars](src/k8s-objects/pods/pod-with-plain-env-vars.yml)
 
 ### ReplicaSets
 
@@ -15,12 +16,17 @@
 
 ### Deployments
 
-1. [Simple Deployment definition](src/k8s-objects/deployments/simple-deployment.yml)
+1. [Simple Deployment definition](src/k8s-objects/deployments/simple-deployment.yml) - [README](./src/k8s-objects/deployments/simple-deployment.md)
 
 ### Services
 
-1. [Simple Service definition - NodePort](./src/k8s-objects/services/simple-service-nodeport.yml)
+1. [Simple Service definition - NodePort](./src/k8s-objects/services/simple-service-nodeport.yml) - [README](./src/k8s-objects/services/simple-service-nodeport.md)
 1. [Simple Service definition - ClusterIP](./src/k8s-objects/services/simple-service-clusterip.yml)
+
+### ConfigMaps
+
+1. [Simple ConfigMap](./src/k8s-objects/config-maps/simple-configmap.yml)
+1. [ConfigMap injected into a Pod](./src/k8s-objects/config-maps/configmap-inject-into-pod.yml)
 
 ### Jobs
 

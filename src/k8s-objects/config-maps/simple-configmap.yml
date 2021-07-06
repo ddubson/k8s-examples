@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myapp-configmap
+data: # instead of 'spec'
+  HOST: "localhost"
+  PORT: "6379"
+  ENABLED: "true"
