@@ -9,6 +9,7 @@
 1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml) - [README](./src/k8s-objects/pods/simple-pod.md)
 1. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
 1. [Pod with plain key-value env vars](src/k8s-objects/pods/pod-with-plain-env-vars.yml)
+1. [Pod with resource requests](src/k8s-objects/pods/pod-with-resource-requests.yml)
 
 ### ReplicaSets
 
@@ -27,6 +28,11 @@
 
 1. [Simple ConfigMap](./src/k8s-objects/config-maps/simple-configmap.yml)
 1. [ConfigMap injected into a Pod](./src/k8s-objects/config-maps/configmap-inject-into-pod.yml)
+
+### Secrets
+
+1. [Simple Secret](./src/k8s-objects/secrets/simple-secret.yml)
+1. [Secret injected into a Pod](./src/k8s-objects/secrets/secret-inject-into-pod.yml)
 
 ### Jobs
 

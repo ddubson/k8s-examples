@@ -1,0 +1,18 @@
+apiVersion: v1          # Version of K8s API to create objects
+kind: Pod               # The type of resource we are creating it
+metadata:
+  name: myapp-pod     # name of the POD
+  labels:             # Any k-v pairs
+    app: myapp        # application being deployed in the POD
+    type: front-end
+spec: # Additional information for each "kind", this case is 'Pod' spec
+  containers:
+    - name: nginx-container
+      image: nginx
+      resources:
+        requests:         # Minimum resources requested by the Pod to function properly
+          memory: "256Mi" # 256 Mebibytes (https://www.bitblock.com/support/knowledge-base?view=kb&kbartid=43)
+          cpu: "1"
+        limits:           # Maximum resources this Pod can request from the Node
+          memory: "1Gi"   # 1 Gigibyte (https://www.bitblock.com/support/knowledge-base?view=kb&kbartid=43)
+          cpu: "2"
