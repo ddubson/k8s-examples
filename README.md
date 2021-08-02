@@ -7,9 +7,10 @@
 ### Pods
 
 1. [Simple POD definition](src/k8s-objects/pods/simple-pod.yml) - [README](./src/k8s-objects/pods/simple-pod.md)
-1. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
-1. [Pod with plain key-value env vars](src/k8s-objects/pods/pod-with-plain-env-vars.yml)
-1. [Pod with resource requests](src/k8s-objects/pods/pod-with-resource-requests.yml)
+2. [Pod with attached Persistent Volume Claim](src/k8s-objects/pods/pod-with-persistent-volume-claim.yml)
+3. [Pod with plain key-value env vars](src/k8s-objects/pods/pod-with-plain-env-vars.yml)
+4. [Pod with resource requests](src/k8s-objects/pods/pod-with-resource-requests.yml)
+5. [Pod with attached service account](./src/k8s-objects/pods/pod-with-attached-serviceaccount.yml)
 
 ### ReplicaSets
 
@@ -33,6 +34,10 @@
 
 1. [Simple Secret](./src/k8s-objects/secrets/simple-secret.yml)
 1. [Secret injected into a Pod](./src/k8s-objects/secrets/secret-inject-into-pod.yml)
+
+### ServiceAccounts
+
+1. [Simple Service Account](./src/k8s-objects/service-accounts/simple-service-account.yml)
 
 ### Jobs
 
